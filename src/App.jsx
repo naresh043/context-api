@@ -11,8 +11,8 @@ function App() {
   return (
     <>
       <h1>{theme}</h1>
-      <button onClick={() => setTheme(theme == "light" ? "black" : "light")}>
-        {theme == "light" ? "set black" : "set light"}
+      <button onClick={() => setTheme(theme === "light" ? "black" : "light")}>
+        Toggle Theme
       </button>
       <h1>{count}</h1>
       <button onClick={() => setCount(count + 1)}>+</button>
